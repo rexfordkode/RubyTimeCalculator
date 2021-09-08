@@ -1,0 +1,16 @@
+$ git merge edits
+Auto-merging examples.md
+CONFLICT (content): Merge conflict in examples.md
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+$ git add README.md
+$ git add examples.md 
+$ git branch -d edits
+error: The branch 'edits' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D edits'.
+$ git commit -m 'Resolve merge conflict'
+[master 4a7be32] Resolve merge conflict
+$ git branch -d edits
+Deleted branch edits (was 0dc9f6a).
+$ ^C
